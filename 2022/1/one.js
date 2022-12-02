@@ -1,4 +1,4 @@
-const { caloriesByElf } = require('./inputStr');
+const { caloriesByElf } = require('./caloriesByElf');
 
 function getMaxCalories() {
   let total = 0;
@@ -10,7 +10,7 @@ function getMaxCalories() {
   return total;
 }
 
-// console.log(getMaxCalories());
+console.log(getMaxCalories());
 
 module.exports = {
   getMaxCalories,

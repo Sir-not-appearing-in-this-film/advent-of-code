@@ -1,4 +1,4 @@
-const { caloriesByElf } = require('./inputStr');
+const { caloriesByElf } = require('./caloriesByElf');
 
 // works for both puzzles on day 1
 
@@ -25,7 +25,7 @@ function getMaxCaloriesByN(threshold = 1) {
   return maxVals.reduce((acc, curr) => acc + curr, 0);
 }
 
-// console.log(getMaxCaloriesByN(3));
+console.log(getMaxCaloriesByN(3));
 
 module.exports = {
   getMaxCaloriesByN,

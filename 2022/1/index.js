@@ -1,12 +1,9 @@
-const { caloriesByElfByNumber, caloriesByElfByParseInt, getCaloriesByElf } = require('./inputStr');
-const { getMaxCalories, getMaxCaloriesByMathMax } = require('./one');
+const { caloriesByElf } = require('./caloriesByElf');
+const { getMaxCalories } = require('./one');
 const { getMaxCaloriesByN } = require('./two');
 
 module.exports = {
-  caloriesByElfByNumber,
-  caloriesByElfByParseInt,
-  getMaxCaloriesByMathMax,
-  getCaloriesByElf,
+  caloriesByElf,
   getMaxCalories,
   getMaxCaloriesByN,
 };
