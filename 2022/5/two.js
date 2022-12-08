@@ -1,7 +1,7 @@
-const { fetchTextData } = require('./loadInputStr');
+const { fetchTextDataFromDay } = require('../utils/loadInputStr');
 
 const getFinalTopCrates = async () => {
-  const inputStr = await fetchTextData();
+  const inputStr = await fetchTextDataFromDay(5);
   const [stacksLines, directionsLines] = inputStr.split('\n\n').map((block) => block.split('\n'));
   const unitLength = 4;
   const numOfStacks = (stacksLines[0].length + 1) / unitLength;
